@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <title>Gerador de senha</title>
+</head>
+<body>
+    <h1>Gerador de senhas</h1>
+
+    <div class="formulario">
+        
+        <label for="">Digite o tamanho da senha (maximo de 20 caracteres)</label>
+        <input type="number" id="tamanho" placeholder="Digite o tamanho da senha">
+
+        <label>Digite a quantidade de senhas que deseja criar (limite de 10 senhas):</label>
+        <input type="number" id="quantidade" placeholder="Digite a quantidade de senhas">
+
+        <label>
+            <span>Letras Minusculas:</span>
+            <input type="checkbox" id="minusculo" checked/>
+        </label>
+        
+        <label>
+            <span>Letras Maiúsculas:</span>
+            <input type="checkbox" id="maiusculo" checked/>
+        </label>
+
+        <label>
+            <span>Números:</span>
+            <input type="checkbox" id="numero" checked/>
+        </label>
+
+        <label>
+            <span>Caracteres Especiais:</span>
+            <input type="checkbox" id="especiais" checked/>
+        </label>
+
+        <button id="criar" onclick="criar()">Gerar</button>
+        <button id="apagar" onclick="apagar()">Limpar</button>
+
+        <script src="script.js"></script>
+
+        <textarea id="textarea" readonly></textarea>
+        
+    </div>
+    
+</body>
+</html>
